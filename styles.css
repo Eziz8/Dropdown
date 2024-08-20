@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  gap: 35px;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  background-color: #143956;
+  color: white;
+}
+
+ul li:not(.products-category li) {
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: coral;
+  transition: 500ms;
+}
+
+i {
+  margin-right: 5px;
+  font-size: medium;
+}
+
+.products:hover .products-category {
+  display: flex;
+}
+
+.products-category {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  padding: 11px 21px;
+  background-color: #143956;
+  border-radius: 9px;
+  top: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
